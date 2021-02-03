@@ -7,27 +7,31 @@ namespace Inheritance
         static void Main(string[] args)
         {
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             * Creatively display the class member values 
-             */
+          
             Bird objectOfBird = new Bird();
             objectOfBird.haveFeathers = true;
             objectOfBird.haveWings = true;
             objectOfBird.haveWings = true;
             objectOfBird.canFly = true;
 
-
-
-
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+        
             Reptile objectOfReptile = new Reptile();
-            objectOfReptile.
+            objectOfReptile.eyesColor = "yellow";
+            objectOfReptile.lookCute = true;
+            objectOfReptile.dangerous = true;
+
+
+            var myAnimals = new Bird[] { objectOfBird };
+            foreach(var animal in myAnimals)
+            {
+                Console.WriteLine("Bird have eggs =" + animal.haveEggs); // is this false because i didn't assignied any value 
+                Console.WriteLine("Bird have feather =" + animal.haveFeathers);
+                Console.WriteLine("Bird have wings =" + animal.haveWings);
+
+            }
+
+
+
 
 
 
